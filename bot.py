@@ -7,7 +7,7 @@ import time
 import aiohttp
 import json
 import os
-from discord import Game
+from discord.ext import Game
 from discord.ext import commands
 
 client = commands.Bot(command_prefix='.m')
