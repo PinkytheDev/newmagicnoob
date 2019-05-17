@@ -7,7 +7,7 @@ import time
 import aiohttp
 import json
 import os
-from discord.ext import Game
+from discord import Game
 from discord.ext import commands
 
 client = commands.Bot(command_prefix='.m')
@@ -24,7 +24,6 @@ def check_queue(id):
 
 @client.event
 async def on_ready():
-    await client.change_presence(game=Game(name='MagicNoob | .m'))
     print('The bot is connected')
     print('Discord Application is being online')
     print('Connected on Application ' + client.user.name)
